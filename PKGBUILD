@@ -34,7 +34,7 @@ _os="$(
   uname \
     -o)"
 if [[ ! -v "_jit" ]]; then
-  _jit="true"
+  _jit="false"
 fi
 if [[ ! -v "_c_compilers" ]]; then
   _c_compiler=()
@@ -66,7 +66,7 @@ _pyminver=13
 _pkgver="${_pymajver}.${_pyminver}"
 pkgname="${_pkg}${_pkgver}"
 pkgver="${_pkgver}.0"
-pkgrel=15
+pkgrel=16
 _pyver="${pkgver}"
 _pybasever="${_pkgver}"
 _pkgdesc=(
